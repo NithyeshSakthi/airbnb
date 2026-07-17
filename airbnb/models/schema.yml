@@ -1,5 +1,11 @@
 models:
-    - name: dim_listings_cleansed   
+    - name: dim_listings_cleansed
+      tests: 
+      - min_row_count:
+          arguments:
+            min_row_count: 1000
+            config:
+              severity: warn
       columns:
         - name: listing_id
           tests:
@@ -18,22 +24,48 @@ models:
             - not_null
             - accepted_values:
                 arguments:
-                  values: ['Entire home/apt', 'Private room', 'Shared room']
+                  values: ['Entire home/apt', 'Private room', 'Shared room', 'Hotel room']
+
+        - name: minimum_nights
+          tests:
+            - positive_values 
 
     - name: dim_hosts_cleansed
+      config:
+        contract:
+          enforced: true
+      constraints:
+        - type: primary_key
+          columns: [host_id]     
       columns:
         - name: host_id
+          data_type: integer
+          constraints:
+            - type: not_null
+            - type: unique
           tests:
             - not_null
             - unique
+
         - name: host_name
+          data_type: string
+          constraints:
+            - type: not_null        
           tests:
             - not_null
         - name: is_superhost
+          data_type: string        
           tests:
             - accepted_values:
                 arguments:
                  values: ['t', 'f']
+        - name: updated_at
+          data_type: timestamp
+        - name: created_at
+          data_type: timestamp
+
+
+
     - name: fct_reviews
       columns:
         - name: listing_id
@@ -51,18 +83,12 @@ models:
             - accepted_values:
                 arguments:
                   values: ['negative', 'positive', 'neutral']
-    - name: dim_hosts_cleansed
-      config:
-        contract:
-          enforced: true
-      columns:
-        - name: host_id
-          data_type: integer 
-        - name: host_name
-          data_type: string
-        - name: is_superhost
-          data_type: string
-        - name: updated_at
-          data_type: timestamp
-        - name: created_at
-          data_type: timestamp
+        - name: minimum_nights
+          tests:
+            - positive_values
+
+
+
+
+
+

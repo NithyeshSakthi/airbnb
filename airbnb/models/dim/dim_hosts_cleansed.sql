@@ -3,7 +3,7 @@ with src_hosts AS(
 )
 SELECT 
     host_id,
-    CASE WHEN host_id is null then 'Anonymous' ELSE host_name
+    CASE WHEN host_name is null then 'Anonymous' ELSE host_name
     End as host_name,
     is_superhost,
     created_at,

@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: src_hosts
+    columns:
+      - name: host_id
+        data_tests:
+          - not_null
+          - unique
+          - relationships:
+              arguments:
+                to: ref('dim_hosts_cleansed')
+                field: host_id

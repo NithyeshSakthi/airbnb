@@ -8,5 +8,6 @@ models:
           - not_null
           - unique
           - relationships:
-              to: ref('dim_hosts_cleansed')
-              field: host_id
+              arguments:
+                to: ref('dim_hosts_cleansed')
+                field: host_id

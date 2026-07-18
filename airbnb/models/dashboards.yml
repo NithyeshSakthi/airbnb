@@ -1,0 +1,16 @@
+version: 2
+
+exposures:
+  - name: executive_dashboards
+    type: dashboard
+    maturity: low
+    url: https://71401034.us1a.app.preset.io/superset/dashboard/p/zWqPYrnYvXM/
+    description: Executive dashboards about the Airbnb listings and full moon dates
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_fullmoon_reviews')
+
+    owner:
+      name: Nithyesh Sakthi
+      email: nithyeshsakthi@gmail.com

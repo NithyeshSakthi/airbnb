@@ -220,12 +220,4 @@ dbt docs serve
 - Documentation & lineage
 - Real-world business insights
 
----
-
-## About the Author
-
-**Nithyesh Sakthi**
-Analytics Engineer | Data Engineering Enthusiast
-Email: nithyeshsakthi@gmail.com
-
----
+This project is designed to be resume-ready, interview-ready, and certification-ready.

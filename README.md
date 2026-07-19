@@ -2,11 +2,12 @@
 
 A complete end-to-end analytics engineering project built using **dbt Core**, **Snowflake**, and **Preset**. This project demonstrates modern data modeling, testing, documentation, lineage tracking, incremenal pipelines and dashboard creation — the workflow real analytics engineering teams use in production.
 
-
-
+![snowflake](airbnb/assets/197-1974101_building-an-advanced-analytics-platform-using-snowflakes-snowflake.png)
+![dbt](<airbnb/assets/dbt-logo (1).png>)
+![Preset](airbnb/assets/57409c415c7e4912a3c6a38dc50373f8-preset-logo-rgb.png)
 
 ![Snowflake + dbt = Preset]()
-![Snowflake + dbt = Preset](<airbnb/assets/Untitled Diagram.drawio (2).png>)
+![Snowflake + dbt = Preset](<airbnb/assets/Untitled Diagram.drawio(2).png>)
 
 ---
 
@@ -44,7 +45,7 @@ The pipeline includes:
 
 ## Architecture
 
-![Data pipeline architecture](architecture_poster.png)
+![Data pipeline architecture)](airbnb/assets/UntitledDiagram.drawio(2).png)
 
 **Flow:** 
 Raw Data
@@ -124,7 +125,7 @@ Example checks:
 ## Documentation & Lineage
 
 ### Live dbt Documentation
-*(Insert your hosted dbt docs link here)*
+*([dbt docs link here](http://localhost:8080/#!/source_list/airbnb))*
 
 Includes:
 
@@ -135,35 +136,12 @@ Includes:
 - Exposures linking dashboards to dbt models
 
 ### DAG Screenshot
-*(Add your DAG image here — e.g. `docs/dag.png`)*
+*![Lineage_graph](airbnb/assets/lineage.png)*
 
 ---
 
 ## Dashboards (Preset)
-
-### Listings & Hosts Intelligence Dashboard
-Insights from `dim_listings_w_hosts`:
-
-- Top hosts by number of listings
-- Average price by room type
-- Superhost vs. normal host pricing
-- Listings by neighbourhood
-- Host response rate distribution
-- Host rating vs. listing price
-
-**Dashboard screenshot:** *(Add your dashboard image here — e.g. `docs/listings_dashboard.png`)*
-
----
-
-### Full Moon Reviews Dashboard
-Insights from `mart_fullmoon_reviews`:
-
-- Review spikes on full moon dates
-- Review sentiment trends
-- Neighbourhood review patterns
-
-**Dashboard screenshot:** *(Add your dashboard image here — e.g. `docs/fullmoon_dashboard.png`)*
-
+[Presetdashboards- Is_fullmoon or not?](airbnb/models/dashboards.yml)
 ---
 
 ## Key Models
@@ -231,16 +209,6 @@ dbt docs generate
 dbt docs serve
 ```
 
----
-
-## About the Author
-
-**Nithyesh Sakthi**
-Analytics Engineer | Data Engineering Enthusiast
-Email: nithyeshsakthi@gmail.com
-
----
-
 ## What This Project Demonstrates
 
 - Modern analytics engineering workflow
@@ -252,4 +220,12 @@ Email: nithyeshsakthi@gmail.com
 - Documentation & lineage
 - Real-world business insights
 
-This project is designed to be resume-ready, interview-ready, and certification-ready.
+---
+
+## About the Author
+
+**Nithyesh Sakthi**
+Analytics Engineer | Data Engineering Enthusiast
+Email: nithyeshsakthi@gmail.com
+
+---

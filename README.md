@@ -2,6 +2,11 @@
 
 A complete end-to-end analytics engineering project built using **dbt Core**, **Snowflake**, and **Preset**. This project demonstrates modern data modeling, testing, documentation, lineage tracking, incremenal pipelines and dashboard creation — the workflow real analytics engineering teams use in production.
 
+
+![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white)
+![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Preset](https://img.shields.io/badge/Preset-663399?style=for-the-badge&logo=apachesuperset&logoColor=white)
 ![snowflake](airbnb/assets/197-1974101_building-an-advanced-analytics-platform-using-snowflakes-snowflake.png)
 ![dbt](<airbnb/assets/dbt-logo (1).png>)
 ![Preset](airbnb/assets/57409c415c7e4912a3c6a38dc50373f8-preset-logo-rgb.png)

@@ -7,12 +7,9 @@ A complete end-to-end analytics engineering project built using **dbt Core**, **
 ![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Preset](https://img.shields.io/badge/Preset-663399?style=for-the-badge&logo=apachesuperset&logoColor=white)
-![snowflake](airbnb/assets/197-1974101_building-an-advanced-analytics-platform-using-snowflakes-snowflake.png)
-![dbt](<airbnb/assets/dbt-logo (1).png>)
-![Preset](airbnb/assets/57409c415c7e4912a3c6a38dc50373f8-preset-logo-rgb.png)
 
-![Snowflake + dbt = Preset]()
-![Snowflake + dbt = Preset](<airbnb/assets/Untitled Diagram.drawio(2).png>)
+
+(<airbnb/assets/Untitled Diagram.drawio(2).png>)
 
 ---
 
